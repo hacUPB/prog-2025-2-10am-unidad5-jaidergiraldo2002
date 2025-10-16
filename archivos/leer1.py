@@ -9,6 +9,7 @@ archivo = open("./archivos/texto1.txt", "r")
 # archivo.readline()
 # archivo.read(11)
 
+#Se usa el comando seek()
 archivo.seek(10)
 datos = archivo.readline()
 archivo.close
