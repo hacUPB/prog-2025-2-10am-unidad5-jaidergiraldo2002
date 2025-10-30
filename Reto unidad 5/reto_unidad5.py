@@ -39,7 +39,7 @@ def reemplazar_palabra(nombre_archivo):
     nuevo_texto = texto.replace(palabra_vieja, palabra_nueva)
     with open(nombre_archivo, "w", encoding="utf-8") as archivo:
         archivo.write(nuevo_texto)
-    print("✅ Reemplazo completado.")
+    print("Reemplazo completado.")
 
 def histograma_vocales(nombre_archivo):
     with open(nombre_archivo, "r", encoding="utf-8") as archivo:
