@@ -49,9 +49,11 @@ def histograma_vocales(nombre_archivo):
         if letra in vocales:
             vocales[letra] += 1
     plt.bar(vocales.keys(), vocales.values(), color='skyblue')
+
     plt.title("Histograma de vocales")
     plt.xlabel("Vocal")
     plt.ylabel("Frecuencia")
+
     plt.show()
 
 # --------------------------
@@ -81,7 +83,7 @@ def calcular_estadisticas(nombre_archivo):
         print("Columna inválida o sin datos numéricos.")
         return
 
-    # Cálculo manual de estadísticas
+    # Cálculo de estadísticas
     n = len(datos)
     suma = 0
     for valor in datos:
